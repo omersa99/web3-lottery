@@ -1,15 +1,23 @@
-import { useAddress } from "@thirdweb-dev/react"
+import { useAddress, useContract } from "@thirdweb-dev/react"
 import type { NextPage } from "next"
 import Head from "next/head"
-import Image from "next/image"
 import Header from "../components/Header"
+import Loading from "../components/Loading"
 import Login from "../components/Login"
 
 const Home: NextPage = () => {
-  //Login
+  //Login -> user Address
   const address = useAddress()
-  console.log(address)
 
+  // contract address
+  const { contract, isLoading } = useContract(
+    process.env.NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS
+  )
+
+  //Connecting the contract & Loading
+  if (isLoading) return <Loading />
+
+  // Connecting the user
   if (!address) return <Login />
 
   return (
