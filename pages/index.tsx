@@ -6,7 +6,7 @@ import {
 } from "@thirdweb-dev/react"
 import type { NextPage } from "next"
 import Head from "next/head"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { ethers } from "ethers"
 import Header from "../components/Header"
 import Loading from "../components/Loading"
@@ -18,6 +18,9 @@ import toast from "react-hot-toast"
 const Home: NextPage = () => {
   //Login -> user Address
   const address = useAddress()
+
+  //Handling user tickits
+  const [userTicket, setuserTickets] = useState(0)
 
   // tickets quantity UI
   const [quantity, setQuantity] = useState<number>(1)
@@ -34,6 +37,9 @@ const Home: NextPage = () => {
     contract,
     "RemainingTickets"
   )
+
+  //Get user Tickets
+  const { data: tickets } = useContractData(contract, "getTickets")
 
   // CurrentWinningReward
   const { data: CurrentWinningReward } = useContractData(
@@ -55,6 +61,24 @@ const Home: NextPage = () => {
   // Buy Handler
 
   const { mutateAsync: BuyTickets } = useContractCall(contract, "BuyTickets")
+
+  //Handling winner
+  const { data: winnings } = useContractData(
+    contract,
+    "getWinningsForAddress",
+    address
+  )
+
+  useEffect(() => {
+    if (!tickets) return
+
+    const totalTickets: string[] = tickets
+    const numberOfUserTickets = totalTickets.reduce(
+      (total, ticketAddress) => (ticketAddress === address ? total + 1 : total),
+      0
+    )
+    setuserTickets(numberOfUserTickets)
+  }, [tickets, address])
 
   const handleBuy = async () => {
     if (!ticketPrice) return
@@ -90,6 +114,21 @@ const Home: NextPage = () => {
         <title>Create Next App</title>
       </Head>
       <Header />
+
+      {/* winner section */}
+      {winnings > 0 && (
+        <div>
+          <button>
+            <p>Winner Winner</p>
+            <p>
+              Total Winnings: {ethers.utils.formatEther(winnings.toString())}{" "}
+              {currency}{" "}
+            </p>
+            <p></p>
+            <p>Click Here to withdraw</p>
+          </button>
+        </div>
+      )}
 
       {/* the next drow Box */}
       <div className="space-y-5 md:space-y-0 m-5 md:flex md:flex-row items-start justify-center md:space-x-5">
@@ -177,15 +216,38 @@ const Home: NextPage = () => {
               onClick={handleBuy}
               className="mt-5 w-full bg-gradient-to-br from-red-500 to-emerald-400 px-10 py-5 rounded-md text-white shadow-xl disabled:text-gray-100 disabled:from-gray-600 disabled:to-gray-100 disabled:cursor-not-allowed"
             >
-              Buy Tickets
+              Buy {quantity} ticket for{" "}
+              {ticketPrice &&
+                Number(ethers.utils.formatEther(ticketPrice.toString())) *
+                  quantity}{" "}
+              {currency}
             </button>
           </div>
+
+          {userTicket > 0 && (
+            <div className="stats">
+              <p className="text-lg mb-2">you Have {userTicket} in this draw</p>
+              <div className="flex max-w-sm flex-wrap gap-x-2 gap-y-2">
+                {Array(userTicket)
+                  .fill("")
+                  .map((_, index) => (
+                    <p
+                      key={index}
+                      className="text-emerald-300 h-20 w-12 bg-emerald-500/30 rounded-lg flex flex-shrink-0 items-center justify-center text-xs italic"
+                    >
+                      {index + 1}
+                    </p>
+                  ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
 
-      {/* the price per ticket Box */}
-      <div>
-        <div></div>
+      <div className="stats">
+        <p className="text-sm text-emerald-900 pl-5">
+          Hello my name is omar sabbah{" "}
+        </p>
       </div>
     </div>
   )
