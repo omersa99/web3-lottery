@@ -68,7 +68,7 @@ function AdminControls() {
 
     try {
       await restartDraw([{}])
-      toast.success("restar tDraw successfuly!", { id: notification })
+      toast.success("restart Draw successfuly!", { id: notification })
     } catch (err) {
       toast.error("Somthing went wrong!", { id: notification })
     }
