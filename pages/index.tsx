@@ -15,6 +15,7 @@ import { currency } from "../constants"
 import CountdownTimer from "../components/CountdownTimer"
 import toast from "react-hot-toast"
 import Marquee from "react-fast-marquee"
+import AdminControls from "../components/AdminControls"
 const Home: NextPage = () => {
   //Login -> user Address
   const address = useAddress()
@@ -84,7 +85,10 @@ const Home: NextPage = () => {
   )
 
   //Check Admin
-  const { data: lotteryOperator } = useContractData(contract, "lotteryOperator")
+  const { data: isLotteryOperator } = useContractData(
+    contract,
+    "lotteryOperator"
+  )
 
   useEffect(() => {
     if (!tickets) return
@@ -159,6 +163,13 @@ const Home: NextPage = () => {
           </h4>
         </div>
       </Marquee>
+
+      {/* Admin Panel */}
+      {isLotteryOperator === address && (
+        <div className="flex justify-center">
+          <AdminControls />
+        </div>
+      )}
 
       {/* winner section */}
       {winnings > 0 && (
