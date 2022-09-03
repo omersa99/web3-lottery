@@ -11,8 +11,9 @@ function Loading() {
           alt=""
         />
         <h1 className="text-lg text-white font-serif">Loading ... </h1> */}
+
+        <GridLoader color="white" size={40} />
       </div>
-      <GridLoader color="white" size={30} />
     </div>
   )
 }

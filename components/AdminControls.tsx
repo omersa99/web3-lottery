@@ -45,6 +45,8 @@ function AdminControls() {
     try {
       await DrawWinnerTicket([{}])
       toast.success("Draw Winner Ticket successfuly!", { id: notification })
+      await onWithdrawCommission()
+      await onrestartDraw()
     } catch (err) {
       toast.error("Somthing went wrong!", { id: notification })
     }

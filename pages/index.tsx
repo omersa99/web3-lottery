@@ -11,11 +11,12 @@ import { ethers } from "ethers"
 import Header from "../components/Header"
 import Loading from "../components/Loading"
 import Login from "../components/Login"
-import { currency } from "../constants"
+import { currency, visitor } from "../constants"
 import CountdownTimer from "../components/CountdownTimer"
 import toast from "react-hot-toast"
 import Marquee from "react-fast-marquee"
 import AdminControls from "../components/AdminControls"
+// import Automation from "../utils/Automation"
 const Home: NextPage = () => {
   //Login -> user Address
   const address = useAddress()
@@ -128,7 +129,7 @@ const Home: NextPage = () => {
 
     try {
       const data = await WithdrawWinnings([{}])
-      toast.success("Tickets Purchased successfully!", { id: notification })
+      toast.success("Withdraw Winnings successfully!", { id: notification })
     } catch (err) {
       toast.error("Somthing went wrong!", { id: notification })
     }
@@ -139,6 +140,14 @@ const Home: NextPage = () => {
 
   // Connecting the user
   if (!address) return <Login />
+
+  //auto winner Drawwing
+  if (expiration?.toString() < Date.now().toString()) {
+    // if (!isLoading) {
+    //   return <Automation />
+    // console.log("time to restart")
+    // }
+  }
 
   return (
     <div className="bg-[#091B18] min-h-screen flex flex-col">
@@ -214,7 +223,7 @@ const Home: NextPage = () => {
           </div>
 
           {/* CountDown Timer */}
-          <div className="mt-5 mb-3">
+          <div className="mt-5 mb-3 w-full">
             <CountdownTimer />
           </div>
         </div>
@@ -305,7 +314,7 @@ const Home: NextPage = () => {
 
       <div className="stats">
         <p className="text-sm text-emerald-900 pl-5">
-          Hello my name is omar sabbah{" "}
+          Hello my name is omar sabbah {expiration?.toString()}
         </p>
       </div>
     </div>

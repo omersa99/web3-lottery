@@ -10,12 +10,13 @@ function Header() {
     <div className="grid grid-cols-2 md:grid-cols-5 justify-between items-center p-5">
       <div className="flex items-center space-x-2">
         <img
-          className="rounded-full h-20 w-20"
-          src="https://insidebitcoins.com/wp-content/uploads/2022/01/online-crypto-lottery-website-1024x682.jpg"
+          className="rounded-full h-20 w-20 font-white"
+          // src="https://insidebitcoins.com/wp-content/uploads/2022/01/online-crypto-lottery-website-1024x682.jpg"
+          src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
           alt=""
         />
         <div>
-          <h1 className="text-lg text-white font-bold">Omar Sabbah</h1>
+          <h1 className="text-lg text-white font-bold">Welcome ...</h1>
           <p className="text-xs text-emerald-500 truncate">
             User {address?.substring(0, 5)}...
             {address?.substring(address.length, address.length - 5)}
@@ -25,16 +26,18 @@ function Header() {
 
       <div className="hidden md:flex md:col-span-3 items-center justify-center rounded-md">
         <div className="bg-[#0A1F1C] p-4 space-x-2">
-          <NavButton title="Buy Tickets" isActive />
-          <NavButton onClick={disconnect} title="LogOut" />
+          {/* <NavButton title="Buy Tickets" isActive /> */}
+          {/* <NavButton onClick={disconnect} title="LogOut" /> */}
         </div>
       </div>
 
       <div className="flex flex-col ml-auto text-right">
-        <Bars3BottomRightIcon className="h-8 w-8 mx-auto text-white cursor-pointer" />
-        <span className="md:hidden">
+        {/* <Bars3BottomRightIcon className="h-8 w-8 mx-auto text-white cursor-pointer" /> */}
+
+        <NavButton onClick={disconnect} title="LogOut" />
+        {/* <span className="md:hidden">
           <NavButton onClick={disconnect} title="LogOut" />
-        </span>
+        </span> */}
       </div>
     </div>
   )
