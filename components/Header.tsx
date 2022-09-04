@@ -12,7 +12,7 @@ function Header() {
         <img
           className="rounded-full h-20 w-20 font-white"
           // src="https://insidebitcoins.com/wp-content/uploads/2022/01/online-crypto-lottery-website-1024x682.jpg"
-          src="https://cryptologos.cc/logos/bitcoin-btc-logo.png"
+          src="https://augustafreepress.com/wp-content/uploads/2022/07/Lucky-Block-Logo.png"
           alt=""
         />
         <div>

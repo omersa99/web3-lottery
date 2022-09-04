@@ -13,9 +13,9 @@ function Login() {
     <div className="bg-[#091B18] min-h-screen flex flex-col items-center justify-center text-center">
       <div className="flex flex-col items-center mb-10">
         <img
-          className="rounded-full h-56 w-56 mb-10"
+          className="rounded-full h-30 w-20 mt-20 mb-10"
           // src="https://cdn-icons-png.flaticon.com/512/5087/5087579.png"
-          src="https://upload.wikimedia.org/wikipedia/he/0/0e/Touch_ID_logo.png"
+          src="https://augustafreepress.com/wp-content/uploads/2022/07/Lucky-Block-Logo.png"
           alt=""
         />
       </div>
