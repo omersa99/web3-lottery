@@ -13,7 +13,7 @@ function NavButton({ title, isActive, onClick }: Props) {
       onClick={onClick}
       className={`${
         isActive && "bg-[#036756]"
-      } hover:bg-[#036756] text-white py-2 px-4 rounded text-bold`}
+      } hover:bg-[#036756] text-white py-2 px-4 rounded-lg text-bold`}
     >
       <ArrowLeftOnRectangleIcon className="h-10 w-10 mx-auto text-white cursor-pointer" />
       {/* {title} */}

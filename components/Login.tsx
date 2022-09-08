@@ -38,8 +38,9 @@ function Login() {
 
       <div className="stats mt-5 mx-3 mb-3">
         <p className="text-lg text-emerald-900 pl-5">
-          Hello my name is omar sabbah This webSite demonstartes a good
-          dasdadkasdmaksldmsafssad asdasdsadhasdbjshdbjsadnbsajk djkas djask
+          Hello, my name is Omar Sabbah, This DApp is for interview purposes
+          only. <br />
+          altho it's fully functional, however, used coin (money) have no value.
         </p>
       </div>
     </div>
