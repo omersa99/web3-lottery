@@ -6,7 +6,8 @@
 # BackEnd:
 - ## JS & Python
 - ## **MetaMask SDK** for managing user Auth & funds transaction.
-- ## **Solidity**: ### SmartContract and functionality.
+- ## **Solidity**:
+SmartContract and functionality.
 - ## **ThirdWeb SDK**: ### Business logic and monitoring.
 
 # Deploy:
