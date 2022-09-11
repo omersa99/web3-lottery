@@ -1,8 +1,7 @@
 
 # FrontEnd
-<!-- # Next.js + Tailwind CSS Example -->
-## Next.js
-## Tailwind CSS
+ Next.js & Tailwind CSS
+ ##
  
 # BackEnd:
 ## Solidity - smartContract
