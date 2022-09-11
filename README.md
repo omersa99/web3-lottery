@@ -5,8 +5,8 @@
  
 # BackEnd:
 
-##**Solidity** - ###SmartContract and functionality
-##**ThirdWeb SDK** - ###Business logic and monitoring
+> Solidity - ###SmartContract and functionality
+> ThirdWeb SDK - ###Business logic and monitoring
 
 
 
