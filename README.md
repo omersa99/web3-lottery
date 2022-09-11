@@ -1,27 +1,19 @@
-# Next.js + Tailwind CSS Example
+# Web3 Lottery Dapp [Demo](http://web3-lottery-v1.vercel.app)
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
-## Deploy your own
+> **Note:** This DApp is for interview purposes only. altho it's fully functional, however, used coin (money) have no value.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+## FrontEnd
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+with React.js (Next.js) & Tailwind CSS
 
-## How to use
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## BackEnd:
+- JS & Python
+- **MetaMask SDK** for managing user Auth & funds transaction.
+- **Solidity** SmartContract and functionality.
+- **ThirdWeb SDK**: Business logic and monitoring.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## Deploy:
+- FrontEnd Deployed with [**Vercel**](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example)
+- BackEnd Deployed on the **Ethereum BlockChain**
