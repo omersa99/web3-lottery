@@ -1,11 +1,13 @@
 
 # FrontEnd
- Next.js & Tailwind CSS
+ with Next.js & Tailwind CSS
  ##
  
 # BackEnd:
-## Solidity - smartContract
-##ds
+##
+**Solidity** - SmartContract and functionality
+**ThirdWeb SDK** - Business logic and monitoring
+
 
 
 
