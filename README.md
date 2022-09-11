@@ -1,6 +1,6 @@
 # Web3 Lottery Dapp [Demo](http://web3-lottery-v1.vercel.app)
 
-![Screenshot](resourses/6szpeu.gif)
+![Screenshot](resourses/6szy70.gif)
 
 
 > **Note:** This DApp is for interview purposes only. altho it's fully functional, however, used coin (money) have no value.
