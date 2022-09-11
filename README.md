@@ -1,12 +1,12 @@
 # Web3 Lottery Dapp [Demo](http://web3-lottery-v1.vercel.app)
 
-#FrontEnd
--##with Next.js & Tailwind CSS
+# FrontEnd
+- ## with Next.js & Tailwind CSS
  
-#BackEnd:
+# BackEnd:
 
-- ###Solidity: SmartContract and functionality
-- ###ThirdWeb SDK: Business logic and monitoring
+- ### Solidity: SmartContract and functionality
+- ### ThirdWeb SDK: Business logic and monitoring
 
 
 
