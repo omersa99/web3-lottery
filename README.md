@@ -1,16 +1,14 @@
 # Web3 Lottery Dapp [Demo](http://web3-lottery-v1.vercel.app)
 
 # FrontEnd
-- ## with Next.js & Tailwind CSS
- 
+- ## with React.js (Next.js) & Tailwind CSS
+
 # BackEnd:
+- ## JS & Python
+- ## **MetaMask SDK** for managing user Auth & funds transaction.
+- ## **Solidity**: ### SmartContract and functionality.
+- ## **ThirdWeb SDK**: ### Business logic and monitoring.
 
-- ### Solidity: SmartContract and functionality
-- ### ThirdWeb SDK: Business logic and monitoring
-
-
-
-
-
-## Deploy
-Deployed with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+# Deploy:
+- ## FrontEnd Deployed with [**Vercel**](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example)
+- ## BackEnd Deployed on the **ethereum blockchain**
