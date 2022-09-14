@@ -1,16 +1,20 @@
 
+![sad](https://img.shields.io/netlify/b6893e85-38e5-4248-8041-b99d9124f0e7?style=for-the-badge)
+
 # Lottery Smart Contract - WEB3
 this repo is a managment system for any form of lottery games that involves the drawing of numbers at random for a prize and handing out tickets.
 
 the mechanism design based on token economics and insures that no prospective owner-occupant has an unfair advantage in the determination of winner.
 
 
+> **Note:** This DApp is for interview purposes only. altho it's fully functional, however, used coin has no value.
 
 
 ## Built With 
 ### BackEnd
 ![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)
 ![Solidity](https://img.shields.io/badge/Solidity-%23363636.svg?style=for-the-badge&logo=solidity&logoColor=white)
+![Ethereum](https://img.shields.io/badge/Ethereum-3C3C3D?style=for-the-badge&logo=Ethereum&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![Heroku](https://img.shields.io/badge/heroku-%23430098.svg?style=for-the-badge&logo=heroku&logoColor=white)
 ![Hyperledger](https://img.shields.io/badge/hyperledger-2F3134?style=for-the-badge&logo=hyperledger&logoColor=white)
@@ -21,7 +25,7 @@ the mechanism design based on token economics and insures that no prospective ow
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
 ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white)
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7)
-![thirdweb](https://img.shields.io/badge/thirdweb-2F3134?style=for-the-badge&logo=hyperledger&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 
 ## Demo
 
@@ -84,6 +88,8 @@ using **Thirdweb**'s SDK deploy feature, a Powerful SDK to integrate decentraliz
 
 ## Features
 
+### [full API can be found here](https://thirdweb.com/0x741179Acd84FeDEb7315a8ce4149f5cEF914185c/Lottery)
+
 ### Write to BlockChain:
 * BuyTickets
 * DrawWinnerTicket
@@ -111,7 +117,7 @@ using **Thirdweb**'s SDK deploy feature, a Powerful SDK to integrate decentraliz
 ## Contact
 
 [@OmarSa] - hello@omarsa.tech
-Project Link: [https://github.com/omarsa999/web3-lottery](https://github.com/omarsa999/web3-lottery)
+[omarsa.tech](Omarsa.tech)
 
 
 > This repository was extended from its original smart contract repo: https://github.com/drord9/Lottery
@@ -121,38 +127,4 @@ Project Link: [https://github.com/omarsa999/web3-lottery](https://github.com/oma
 
 [Next.js]: https://img.shields.io/badge/solidity-000000?style=for-the-badge&logo=solidity&logoColor=white
 [Next-url]: https://nextjs.org/
-
-
-
-
-
-
-
-
-
-
-
-# Web3 Lottery Dapp [Demo](http://web3-lottery-v1.vercel.app)
-
-
-
-
-> **Note:** This DApp is for interview purposes only. altho it's fully functional, however, used coin (money) have no value.
-
-## FrontEnd
-
-with React.js (Next.js) & Tailwind CSS
-
-
-## BackEnd:
-- JS & Python
-- **MetaMask SDK** for managing user Auth & funds transaction.
-- **Solidity** SmartContract and functionality.
-- **ThirdWeb SDK**: Business logic and monitoring.
-
-## Deploy:
-- FrontEnd Deployed with [**Vercel**](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example)
-- BackEnd Deployed on the **Ethereum BlockChain**
-
-
 
