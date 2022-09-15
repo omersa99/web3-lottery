@@ -1,5 +1,5 @@
 
-![sad](https://img.shields.io/netlify/b6893e85-38e5-4248-8041-b99d9124f0e7?style=for-the-badge)
+![Build](https://img.shields.io/netlify/b6893e85-38e5-4248-8041-b99d9124f0e7?style=for-the-badge)
 
 # Crypto Lottery System - WEB3
 this repo is a managment system for any form of lottery games that involves the drawing of numbers at random for a prize and handing out tickets.
