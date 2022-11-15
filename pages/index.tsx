@@ -136,7 +136,7 @@ const Home: NextPage = () => {
   }
 
   //Connecting the contract & Loading
-  if (isLoading) return <Loading />
+  // if (isLoading) return <Loading />
 
   // Connecting the user
   if (!address) return <Login />
